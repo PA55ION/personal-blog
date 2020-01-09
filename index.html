@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <link rel="stylesheet" href="css/blog-posts.css"> -->
+    <link href="dist/hamburgers.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <link rel="stylesheet" href="css/styles.css">
@@ -12,78 +15,90 @@
     <link rel="stylesheet" href="css/footer.css">
     <title>Personal Blog</title>
 </head>
+
 <body>
     <!--Main section-->
     <section class="hero-section">
-        <nav class="nav-menu">
-            <ul>
-                <li>Home</li>
-                <li>About Me</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+        <div class="topnav">
+            <a href="#home" class="active">Mai</a>
+        <div id="menu">
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <span id="menuIcon" class="iconify" data-icon="bx:bx-menu-alt-right" data-inline="false">
+            </span>
+        </a>
+    </div>
+
         <div class="background-container">
             <div class="main-section">
-               
-                    <p class="hi-text">Hi my name is,</p>
-                    <h1 class="name">Mai Campbell</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br />
-                        Porro iste molestias corrupti, recusandae non temporibus.</p>
-                    <button class="contactBtn">
-                        <!-- <span 
+                <p class="hi-text">Hi my name is,</p>
+                <h1 class="name">Mai Campbell</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br />
+                    Porro iste molestias corrupti, recusandae non temporibus.</p>
+                <button class="contactBtn">
+                    <!-- <span 
                             class="iconify" 
                             data-icon="feather:send" 
                             data-inline="false"
                             style="color: white; font-size: 20px">
                         </span> -->
-                        <a class="message-text" href="mailto:mai.campbell@outlook.com"> Message me</a>
-                    </button>
+                    <a class="message-text" href="mailto:mai.campbell@outlook.com"> Message me</a>
+                </button>
             </div>
         </div>
 
     </section>
     <!--Middle section-->
     <section class="blog-post">
-        <h1 class="travel">My travel experience</h1>
-         <div class="container"> 
+        <h3 class="travel-heading">My travel experience</h3>
+        <div class="container1">
             <div class="grid-container">
                 <div class="blog-post_img">
-                        <img class="img"src="assets/hawaii.JPG" alt="hawaii" /> 
-                </div>
-                <div class="blog-post_info">
-                    <span class"blog-title">Title</span>
-                    <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, illum, dolores incidunt debitis ipsa explicabo nemo eos optio doloremque temporibus numquam magnam praesentium accusamus, esse repellendus? Pariatur odit voluptate animi?
-                    .</p>
-                    <button class="read-btn"> Read more </button>
-                </div>
-            </div>           
-        </div> 
-        <div class="container"> 
-            <div class="grid-container">
-                <div class="blog-post_img">
-                        <img class="img"src="assets/french.JPG" alt="hawaii" /> 
+                    <img class="img" src="assets/hawaii.JPG" alt="hawaii" />
                 </div>
                 <div class="blog-post_info">
                     <span class="blog-title">Title</span>
-                    <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, illum, dolores incidunt debitis ipsa explicabo nemo eos optio doloremque temporibus numquam magnam praesentium accusamus, esse repellendus? Pariatur odit voluptate animi?
-                    .</p>
+                    <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, illum,
+                        dolores incidunt debitis ipsa explicabo nemo eos optio doloremque temporibus numquam magnam
+                        praesentium accusamus, esse repellendus? Pariatur odit voluptate animi?
+                        .</p>
                     <button class="read-btn"> Read more </button>
                 </div>
             </div>
-        </div> 
-        <div class="container"> 
+        </div>
+        <div class="container2">
             <div class="grid-container">
                 <div class="blog-post_img">
-                        <img class="img"src="assets/pic1.JPG" alt="hawaii" /> 
+                    <img class="img" src="assets/french.JPG" alt="hawaii" />
                 </div>
                 <div class="blog-post_info">
                     <span class="blog-title">Title</span>
-                    <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, illum, dolores incidunt debitis ipsa explicabo nemo eos optio doloremque temporibus numquam magnam praesentium accusamus, esse repellendus? Pariatur odit voluptate animi?
-                    .</p>
+                    <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, illum,
+                        dolores incidunt debitis ipsa explicabo nemo eos optio doloremque temporibus numquam magnam
+                        praesentium accusamus, esse repellendus? Pariatur odit voluptate animi?
+                        .</p>
                     <button class="read-btn"> Read more </button>
                 </div>
-            </div>           
-        </div> 
+            </div>
+        </div>
+        <div class="container3">
+            <div class="grid-container">
+                <div class="blog-post_img">
+                    <img class="img" src="assets/pic1.JPG" alt="hawaii" />
+                </div>
+                <div class="blog-post_info">
+                    <span class="blog-title">Title</span>
+                    <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, illum,
+                        dolores incidunt debitis ipsa explicabo nemo eos optio doloremque temporibus numquam magnam
+                        praesentium accusamus, esse repellendus? Pariatur odit voluptate animi?
+                        .</p>
+                    <button class="read-btn"> Read more </button>
+                </div>
+            </div>
+        </div>
     </section>
     <footer class="footer">
         <p class="contact">Feel free to ask me any question about my travel experience</p>
@@ -91,18 +106,40 @@
             <a class="message-text" href="mailto:mai.campbell@outlook.com"> Message me</a>
         </button>
         <div class="social-icon">
-            <span 
-                class="iconify" data-icon="fa-brands:github-square" data-inline="false">
-            </span>
-            <span 
-                class="iconify" 
-                data-icon="fa-brands:linkedin" data-inline="false">
-            </span>
-            <span 
-                class="iconify" data-icon="fa-brands:instagram" data-inline="false">
-        </span>
-        <p>made with love <iconify-icon data-icon="bx:bxs-heart"></iconify-icon>by mai</p>
+            <a href="#" alt="">
+                <span 
+                    class="iconify" 
+                    data-icon="fa-brands:github-square" d
+                    ata-inline="false">
+                </span>
+            </a>
+            <a href="#" alt="">
+                <span 
+                    class="iconify" 
+                    data-icon="fa-brands:linkedin" 
+                    data-inline="false">
+                </span>
+            </a>
+            <a href="#" alt="">
+                <span 
+                    class="iconify" 
+                    data-icon="fa-brands:instagram" 
+                    data-inline="false">
+                </span>
+            </a>
+            <p>made with love <iconify-icon data-icon="bx:bxs-heart"></iconify-icon>by mai</p>
         </div>
     </footer>
+    <script>
+        function myFunction() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
 </body>
+
 </html>
