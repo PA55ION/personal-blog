@@ -4,6 +4,10 @@
     align-content: space-around;
     min-height: 100vh;
     background-color: #eee;
+    padding-bottom: 150px;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
 }
 
 .container1,
@@ -56,8 +60,12 @@
 
 .blog-post_info {
     margin-top: 125px;
-    padding: 0 15px 0 15px;
+    padding: 2em;
 
+}
+
+.blog-post_info2 {
+    margin-top: 5px;
 }
 
 .travel-heading {
@@ -76,8 +84,7 @@
 
 .read-btn {
     width: 160px;
-    height: 40px;
-    /* background-image: linear-gradient(to right, #00c9ff, #92fe9d); */
+    height: 45px;
     color: white;
     border-radius: 13px;
     background-image: linear-gradient(to right, #fc00ff, #00dbde);
@@ -96,10 +103,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-    p {
-        color: red;
-    }
-
     .travel-heading {
         font-size: 34px;
     }
@@ -148,16 +151,9 @@
     .read-btn {
         margin-top: 25px;
     }
-
-
 }
 
 @media only screen and (max-width: 868px) {
-
-    p {
-        color: green;
-    }
-
     .travel-heading {
         font-size: 38px;
     }
@@ -239,10 +235,6 @@
 
 
 @media only screen and (min-width: 992px) {
-    p {
-        color: blue;
-    }
-
     .travel-heading {
         font-size: 45px;
     }
@@ -285,10 +277,6 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    p {
-        color: purple;
-    }
-
     .travel-heading {
         font-size: 55px;
     }

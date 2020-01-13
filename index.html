@@ -4,29 +4,23 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0 shrinktofit=no"
+      content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- <link rel="stylesheet" href="css/blog-posts.css"> -->
-    <link href="dist/hamburgers.css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-
     <link rel="stylesheet" href="css/styles.css" />
     <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
-    <link rel="stylesheet" href="css/footer.css" />
+   
     <title>Personal Blog</title>
   </head>
 
   <body>
-    <!--Main section-->
+    <!-- Navigation menu-->
     <section class="hero-section">
       <div class="topnav">
         <a href="#home" class="active">Mai</a>
         <div id="menu">
           <a href="#blog">Blog</a>
           <a href="#contact">Contact</a>
-          <a href="#about">About</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <span
@@ -39,15 +33,16 @@
         </a>
       </div>
 
+      <!-- Main section-->
       <div class="background-container">
         <div class="main-section">
           <p class="hi-text">Hi my name is,</p>
           <h1 class="name">Mai Campbell</h1>
           <p class="bio">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br />
-            Porro iste molestias corrupti, recusandae non temporibus.
+            Passionate about coding, love learning new technologies. <br />
+            In my spare time I like to travel, crochet amd code.
           </p>
-          <button class="contactBtn">
+          <button class="contactBtn1">
             <!-- <span 
                             class="iconify" 
                             data-icon="feather:send" 
@@ -61,9 +56,10 @@
         </div>
       </div>
     </section>
-    <!--Middle section-->
-    <section class="blog-post">
-      <h3 class="travel-heading">My travel experience</h3>
+
+    <!--blog section-->
+    <section id="blog" class="blog-post">
+      <h3 class="travel-heading">Travel experience</h3>
       <div class="container1">
         <div class="grid-container">
           <div class="blog-post_img">
@@ -116,34 +112,42 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <p class="contact">
-        Feel free to ask me any question about my travel experience
+    <footer class="footer-container">
+      <div class="footer">
+        <h1 class="contact-header">Don't be shy</h1>
+      <p class="contact-message">
+        Feel free to ask me any question about my travel experience.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore est, quas voluptas explicabo quam cumque?
       </p>
+    <div id="contact" class="contact">
       <button class="contactBtn">
         <a class="message-text" href="mailto:mai.campbell@outlook.com">
           Message me</a
         >
-      </button>
+       </button> 
+      </div>
+    </div>
+      <!--<div class="footer-container"> -->
       <div class="social-icon">
-        <a href="#" alt="">
+        <a href="https://github.com/PA55ION" alt="github-link">
           <span
             class="iconify"
             data-icon="fa-brands:github-square"
-            d
-            ata-inline="false"
-          >
-          </span>
+            data-inline="false"
+          ></span>
         </a>
-        <a href="#" alt="">
+        <a
+          href="https://www.linkedin.com/in/mai-campbell-a3741a61/"
+          alt="linkedin-link"
+          target="_blank"
+        >
           <span
             class="iconify"
             data-icon="fa-brands:linkedin"
             data-inline="false"
-          >
-          </span>
+          ></span>
         </a>
-        <a href="#" alt="">
+        <a href="https://www.instagram.com/maiithai/" target="_blank">
           <span
             class="iconify"
             data-icon="fa-brands:instagram"
@@ -151,11 +155,19 @@
           >
           </span>
         </a>
-        <p>
-          made with love
-          <iconify-icon data-icon="bx:bxs-heart"></iconify-icon>by mai
+
+        <p class="copyright">
+          made with
+          <span
+            id="heart-icon"
+            class="iconify"
+            data-icon="bx:bxs-heart"
+            data-inline="false"
+          ></span>
+          by mai
         </p>
       </div>
+    <!-- </div> -->
     </footer>
     <script>
       function myFunction() {
