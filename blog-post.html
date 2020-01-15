@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- The link below is for icon-->
+  <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+  <title>Personal Blog</title>
+</head>
+
+<body>
+  <!-- Navigation menu-->
+  <section class="hero-section">
+    <div class="topnav">
+      <a href="index.html" class="active">Mai</a>
+      <div id="menu">
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <span id="menuIcon" class="iconify" data-icon="bx:bx-menu-alt-right" data-inline="false">
+        </span>
+      </a>
+    </div>
+  </section>
+
+    <section class="blog-container">
+      <div class="content">
+        <h1 class="title">Blog title</h1>
+        <p class="post-date">01/19/2016</p>
+        <figure>
+          <img class="beach" src="assets/samui.JPG" alt="beach" />
+          <figcaption>Koh Samui, Thailand</figcaption>
+        </figure>
+        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus modi corrupti
+          magni veniam quas aperiam porro laboriosam, voluptas necessitatibus minus expedita maiores officiis, quae
+          deserunt!
+        </p>
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos explicabo neque nihil amet exercitationem quo
+          ullam fuga maxime eligendi nobis nesciunt ipsa modi fugiat nulla doloremque reprehenderit harum similique
+          tempora, excepturi blanditiis? Eos esse animi quisquam, minus dolores placeat. Ex nihil adipisci laudantium id
+          excepturi.</p>
+      </div>
+    </section>
+
+    <!--about me section-->
+    <section class="author">
+      <div class="user-info">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <img class="profile" src="assets/profile.JPEG" alt="profile-img" />
+        <p class="username"><b>Mai Campbell</b></p>
+        <p class="job-title">Software Engineer</p>
+        <p class="school">Udacity</p>
+      <div class="quote">
+        <blockquote>
+          <p><q>Whenever you see a successful person you only see the public glories, never the private sacrifices to
+              reach them. </q></p>
+          <p>Vaibhav Shah</p>
+
+        </blockquote>
+      </div>
+    </div>
+    </section>
+
+    <!--<div class="footer-container"> -->
+    <div class="social-icon">
+      <a href="https://github.com/PA55ION" alt="github-link">
+        <span class="iconify" data-icon="fa-brands:github-square" data-inline="false"></span>
+      </a>
+      <a href="https://www.linkedin.com/in/mai-campbell-a3741a61/" alt="linkedin-link" target="_blank">
+        <span class="iconify" data-icon="fa-brands:linkedin" data-inline="false"></span>
+      </a>
+      <a href="https://www.instagram.com/maiithai/" target="_blank">
+        <span class="iconify" data-icon="fa-brands:instagram" data-inline="false">
+        </span>
+      </a>
+
+      <p class="copyright">
+        made with
+        <span id="heart-icon" class="iconify" data-icon="bx:bxs-heart" data-inline="false"></span>
+        by mai
+      </p>
+    </div>
+    <!-- </div> -->
+    </footer>
+    <script>
+      function myFunction() {
+        var menu = document.getElementById("menu");
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      }
+    </script>
+</body>
+
+</html>

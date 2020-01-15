@@ -1,0 +1,93 @@
+.blog-container {
+    padding: 1em;
+    border: 2px solid salmon;
+    margin: 1em;
+    width: 530px;
+}
+
+.content {
+    min-height: 100vh;
+    grid-area: content;
+
+}
+
+.title {
+    font-size: 35px;
+    text-align: center;
+    
+}
+
+.description {
+    padding: 1em;
+}
+
+.beach {
+    width: 300px;
+    height: 300px;
+    box-shadow: 3px 2px 3px 2px rgba(0, 0, 0, 0.4);
+}
+
+.author {
+    padding: 2em;
+    margin: 3em;
+    border: 1px solid red;
+    width: 500px;
+}
+
+.user-info {
+    grid-area: author;
+}
+
+.profile {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+@media only screen and (min-width: 600px) {
+    .title {
+        color: red;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .title {
+        color: green;
+    }
+    
+}
+
+@media only screen and (min-width: 868px) {
+    .title {
+        color: salmon;
+    }
+}
+
+@media only screen and (min-width: 968px) {
+    .title {
+        color: pink;
+    }
+
+    .author {
+    display: block;
+    position: absolute;
+    top: 100px; 
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .title {
+        color: blue;
+    }
+
+    .author {
+        display: block;
+        position: absolute;
+        top: 100px; 
+        }
+    }
+}

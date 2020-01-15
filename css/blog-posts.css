@@ -30,6 +30,7 @@
 
 .grid-container {
     display: flex;
+    flex-direction: row;
 }
 
 .img {
@@ -38,6 +39,19 @@
     height: 350px;
     box-shadow: 3px 2px 3px 2px rgba(0, 0, 0, 0.4);
 
+}
+
+.img-caption {
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    top: 80px;
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .blog-post_img {
@@ -73,7 +87,6 @@
     padding: 35px 0 85px 0;
     text-align: center;
     font-family: source-code-pro, monospace;
-    font-weight: bold;
 }
 
 .blog-description {
@@ -96,6 +109,7 @@
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
+    font-size: 16px;
 }
 
 .read-btn:hover {
@@ -132,14 +146,20 @@
 
     .blog-title {
         font-size: 20px;
-        margin-top: 20px;
+        margin-left: -25px;
     }
+
+    .img-caption {
+        top: -10px;
+    }
+
 
     .blog-description {
         line-height: 1.68em;
         word-break: break-all;
-        width: 330px;
-
+        width: 330px; 
+        padding-right: 1em;
+        margin-left: -25px;
     }
 
     .blog-post_info {
@@ -147,9 +167,16 @@
         margin-top: 25px;
     }
 
+    .blog-post_info2 {
+        width: 350px;
+        margin-top: 25px;
+        padding-left: 55px;
+    }
+
 
     .read-btn {
-        margin-top: 25px;
+        margin-top: 15px;
+        margin-left: -25px;
     }
 }
 
@@ -185,6 +212,11 @@
         flex-direction: column;
     }
 
+    .img-caption {
+        font-size: 14px;
+        text-align: center;
+    }
+
     .grid-container2 {
         flex-direction: column;
     }
@@ -203,8 +235,7 @@
     }
 
     .blog-post_info {
-        margin-left: 25px;
-        margin-top: 75px;
+        margin-top: 35px;
         width: 350px;
     }
 
@@ -212,7 +243,6 @@
         margin-left: 25px;
         margin-top: 105px;
         width: 350px;
-
     }
 
     .blog-title {
@@ -224,11 +254,10 @@
         width: 370px;
         flex-wrap: wrap;
         line-height: 1.68em;
-
     }
 
     .read-btn {
-        margin-top: 55px;
+        margin-top: 35px;
     }
 
 }
@@ -242,7 +271,7 @@
     .container1,
     .container3 {
         width: 940px;
-        margin: 0 50px 0 50px;
+        margin: 35px 50px 35px 50px;
         box-shadow: 3px 2px 3px 2px rgba(0, 0, 0, 0.4);
         border-radius: 8px;
     }
@@ -265,14 +294,17 @@
     }
 
     .blog-post_info {
-        margin-top: 25px;
         width: 400px;
         flex-wrap: wrap;
         line-height: 1.68em;
     }
 
+    .blog-post_info2 {
+        margin-right: 45px;
+    }
+
     .read-btn {
-        margin-top: 55px;
+        margin-top: 5px;
     }
 }
 

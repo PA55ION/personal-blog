@@ -1,11 +1,11 @@
 @import "./blog-posts.css";
+@import "./blog.css";
 @import "./footer.css";
 @import url("https://use.typekit.net/kda6gbg.css");
 @import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
 
 * {
     box-sizing: border-box;
-    
 }
 
 body {
