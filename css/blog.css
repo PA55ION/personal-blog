@@ -1,4 +1,10 @@
-.blog-container {
+.wrapper {
+    overflow: hidden;
+    /* display: flex;
+    flex-flow: wrap; */
+}
+
+/* .blog-container {
     padding: 1em;
     width: 480px;
     box-shadow: 3px 2px 3px 2px rgba(0, 0, 0, 0.4);
@@ -164,7 +170,7 @@ textarea {
   }
 
 
-@media only screen and (min-width: 655px) {
+@media only screen and (min-width: 600px) {
     .blog-container,
     .author,
     .contact-form {
@@ -344,4 +350,4 @@ textarea {
     .ask-question {
         padding: 2em;
     }
-}
+} */

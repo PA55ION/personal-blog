@@ -10,18 +10,19 @@
     <link rel="stylesheet" href="css/styles.css" />
     <!-- The link below is for icons-->
     <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+    <link rel="icon" href="https://img.icons8.com/nolan/2x/ruby-programming-language.png" />
     <title>Personal Blog</title>
   </head>
 
   <body>
     <!-- Navigation menu-->
     <section class="hero-section">
-      <div class="topnav">
+      <div class="topnav" id="myTopnav">
         <a href="#home" class="active">Mai</a>
-        <div id="menu">
+        
           <a href="blog-post.html">Blog</a>
           <a href="#contact">Contact</a>
-        </div>
+   
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <span
             id="menuIcon"
@@ -75,7 +76,7 @@
               repellendus? Pariatur odit voluptate animi? .
             </p>
             <button class="read-btn">
-              <a href="blos-post.html">
+              <a href="blog-post.html">
                 <b>Read more</b>
                 </a>
              
@@ -120,7 +121,7 @@
               repellendus? Pariatur odit voluptate animi? .
             </p>
             <button class="read-btn">
-              <a href="blos-post.html">
+              <a href="blog-post.html">
               <b>Read more</b>
               </a>
             </button>
@@ -187,11 +188,11 @@
     </footer>
     <script>
       function myFunction() {
-        var menu = document.getElementById("menu");
-        if (menu.style.display === "block") {
-          menu.style.display = "none";
+        var menu = document.getElementById("myTopnav");
+        if (menu.className === "topnav") {
+          menu.className  += " responsive";
         } else {
-          menu.style.display = "block";
+          menu.className = "topnav";
         }
       }
     </script>
