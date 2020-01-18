@@ -8,40 +8,28 @@
     cursor: pointer;
 }
 
-.footer-container {
-    height: 100vh;
-}
-
 .footer {
-    display: grid;
-    min-width: 100vw;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    height: 100%;
-    padding: 2em;
+    margin: 10rem 0 10rem 0;
+    min-height: 50vh;
+    padding: 2rem;
 }
 
 .contact-message {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    line-height: 1.68rem;
+    margin: 5rem 0 5rem 0;
     text-align: center;
-    width: 100%;
-    margin-top: 100px;
-    
+    line-height: 1.68em;
 }
 
 .contact-header {
     text-align: center;
-    font-size: 55px;
+    font-size: 10vw;
     font-family: source-code-pro, monospace;
-    margin-top: 75px;
+    margin-top: 15px;
 }
 
 .contact {
     text-align: center;
+    margin: 7rem 0 7rem 0;
 }
 
 .contactBtn {
@@ -92,101 +80,52 @@
 
 }
 
-@media only screen and (min-width: 375px) {
+@media screen and (min-width: 600px) {
     .contact-header {
-        margin-bottom: -155px;
+        font-size: 8vw;
     }
-
-    .contact-message {
-        margin-bottom: 125px;
-    }
-
 }
 
-
-@media only screen and (min-width: 600px) {
-        .contact-message {
-            padding: 1em;
-            text-align: center;
-            margin-bottom: 85px;
-            width: 550px;
-            
-        }
-        
-        .contact-header {
-            text-align: center;
-            margin-bottom: -150px;
-
-        }
-
-        .contact {
-            margin-top: 55px;
-            
-
-        }
-}
 
 @media only screen and (min-width: 768px) {
     .contact-header {
-        margin-bottom: -100px;
-    }
-
-    .contact-message {
-        margin-bottom: 85px;
-        
+        font-size: 6vw;
     }
 }
 
 
 @media only screen and (min-width: 868px) {
     .contact-header {
-        text-align: center;
-        font-size: 45px;
+        font-size: 6vw;
     }
 
     .contact-message {
-        margin-top: 25px;
-        font-size: 18px;
-        margin-bottom: 85px;
-        width: 650px;
+       font-size: 18px;
+       padding: 0 2rem 0 2rem;
+        margin: 0 7rem 0 7rem;
     }
-
-    .contact {
-        margin-top: 45px;
-        margin-bottom: 45px;
-        text-align: center;
-    }
-
 }
 
 @media only screen and (min-width: 992px) {
     .contact-header {
-        font-size: 55px;
-        margin-bottom: 30px;
+        font-size: 4vw;
     }
 
     .contact-message {
-        font-size: 20px;
-        width: 650px;
-        margin-bottom: 85px;
+        font-size: 17px;
+        padding: 0 2rem 0 2rem;
+        margin: 0 10rem 0 10rem;
     }
-
-    .contact {
-        margin-top: 135px;
-        margin-bottom: 175px;
-        text-align: center;
-    }
-
 }
 
 @media only screen and (min-width: 1200px) {
     .contact-header {
-        font-size: 65px;
+        font-size: 4vw;
     }
 
     .contact-message {
-        font-size: 20px;
-        width: 650px;
+        font-size: 18px;
+        padding: 0 2rem 0 2rem;
+        margin: 0 18rem 0 18rem;
     }
-
-}
+} 
